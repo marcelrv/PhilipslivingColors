@@ -1,0 +1,26 @@
+
+Disclaimer: This information in thi file is derived from observing the commands send by the controller to the Living color lamp.
+It may neigher be complete nor correct
+
+Message setup
+
+```
+Position   Length   Information
+===================================================
+0000-0000  1        Lenght of the message
+0001-0004  4        from address
+0005-0008  4        to address
+0009-0009  1        Sequence byte
+000A-000A  1        type
+000B-000B  1        Command
+000C-000E  3        Payload  (HSV) each 1 byte
+000F-0010  2        CRC-16
+```
+
+| Commands | Description |
+| 0x01 | Identify / search? |
+| 0x03 | Set HSV color |
+| 0x04 | Set HSV color act |
+| 0x05 | ? |
+| 0x07 | ? |
+
