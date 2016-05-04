@@ -18,7 +18,8 @@ Position   Length   Information
 ```
 
 | Commands | Description | Comment   |
-| 0x01 | Ping / Identify / search? | Is seen when no act from lamp is received |
+| -------- | ------ | -------- |
+| 0x01 | ?? Ping / Identify / search | Is seen when no Act from lamp is received |
 | 0x03 | Set HSV color | payload is H,S,V bytes|
 | 0x04 | Set HSV color Ack | payload is H,S,V bytes|
 | 0x05 | Switch Lamp On | payload is H,S,V bytes|
