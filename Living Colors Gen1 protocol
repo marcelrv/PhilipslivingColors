@@ -7,7 +7,7 @@ Message setup
 ```
 Position   Length   Information
 ===================================================
-0000-0000  1        Lenght of the message (always 0x0E)
+0000-0000  1        Length of the message (always 0x0E)
 0001-0004  4        to address (lamp)
 0005-0008  4        from address (remote)
 0009-0009  1        port ? (always 0x11)
