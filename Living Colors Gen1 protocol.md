@@ -26,7 +26,7 @@ Position   Length   Information
 | 0x06 | Switch Lamp On Ack| payload is H,S,V bytes|
 | 0x07 | Switch Lamp Off | payload is 0,0,0 |
 | 0x08 | Switch Lamp Off Ack | payload is 0,0,0 |
-| 0x0C | ?? Seen when holding ON. Possibly demo mode | payload is G,S,V |
+| 0x0C | Color Changing/rotating mode. (Seen when holding ON)  | payload is G,S,V |
 
 After each command the sequence byte is increased with 1 digit
 Lamp will acknoledge with the command bit +1 (0x04 is ack of command 0x03) 
