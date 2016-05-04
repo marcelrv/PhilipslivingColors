@@ -7,18 +7,18 @@ Message setup
 ```
 Position   Length   Information
 ===================================================
-0000-0000  1        Lenght of the message
+0000-0000  1        Lenght of the message (always 0x0E)
 0001-0004  4        to address (lamp)
 0005-0008  4        from address (remote)
-0009-0009  1        Msg Type?
-000A-000A  1        Command
-000B-000B  1        Sequence byte
+0009-0009  1        port ? (always 0x11)
+000A-000A  1        Command (see below table)
+000B-000B  1        tractid: Sequence number byte
 000C-000E  3        Payload  (HSV) each 1 byte
 000F-0010  2        CRC-16
 ```
 
 | Commands | Description | Comment   |
-| 0x01 | Identify / search? | Is seen when no act from lamp is received |
+| 0x01 | Ping / Identify / search? | Is seen when no act from lamp is received |
 | 0x03 | Set HSV color | payload is H,S,V bytes|
 | 0x04 | Set HSV color act | payload is H,S,V bytes|
 | 0x05 | Switch Lamp On | payload is H,S,V bytes|
@@ -38,3 +38,9 @@ Example messages
 0E 90 38 92 a0 0f ae b3 79 30 11 07 cd 00 00 00 df 90		msgLen 0E to 3892A00F From AEB37930 type:11 seq:CD cmd:07 CRC DF90 payload:00 00 00
 
 ```
+
+CRC-16 calculation (to be confimed)
+polynominal = 0x18005
+reverse = false   !!
+initial = 0xFFFF
+XOR = false / 0x00
