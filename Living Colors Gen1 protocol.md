@@ -8,8 +8,8 @@ Message setup
 Position   Length   Information
 ===================================================
 0000-0000  1        Length of the message (always 0x0E)
-0001-0004  4        to address (lamp)
-0005-0008  4        from address (remote)
+0001-0004  4        Destination - to address
+0005-0008  4        Source - from address
 0009-0009  1        port ? (always 0x11)
 000A-000A  1        Command (see below table)
 000B-000B  1        tractid: Sequence number byte
@@ -30,6 +30,8 @@ Position   Length   Information
 
 After each command the sequence byte is increased with 1 digit
 Lamp will acknoledge with the command bit +1 (0x04 is ack of command 0x03) 
+
+Destination address FF FF FF FF is broadcast
 
 Example messages
 ```
