@@ -36,13 +36,14 @@ Destination address FF FF FF FF is broadcast
 
 Example messages
 ```
-0E 92 38 92 a0 0f ae b3 79 30 11 03 8f 9a 3c aa e7 92		msgLen 0E to 3892A00F From AEB37930 type:11 seq:8F cmd:03 CRC E792 payload:9A 3C AA
-0E 99 38 92 a0 0f ae b3 79 30 11 07 9d 07 72 88 e1 1b		msgLen 0E to 3892A00F From AEB37930 type:11 seq:9B cmd:07 CRC E199 payload:00 00 00
-0E a8 ff ff ff ff ae b3 79 30 11 01 9f 00 00 00 dd a8		msgLen 0E to FFFFFFFF From AEB37930 type:11 seq:9F cmd:01 CRC DDA8 payload:00 00 00
-0E 3c 66 c4 60 17 ae b3 79 30 11 05 b7 b5 2e 8a df 3c		msgLen 0E to 66C46017 From AEB37930 type:11 seq:B7 cmd:05 CRC DF3C payload:B5 2E 8A
-0E 9a 38 92 a0 0f ae b3 79 30 11 07 c7 00 00 00 df a3		msgLen 0E to 3892A00F From AEB37930 type:11 seq:C5 cmd:07 CRC DD9A payload:00 00 00
-0E 33 ff ff ff ff ae b3 b4 ac a1 05 ca 00 00 00 df 33		msgLen 0E to FFFFFFFF From AEB3B4AC type:A1 seq:CA cmd:05 CRC DF33 payload:00 00 00
-0E 90 38 92 a0 0f ae b3 79 30 11 07 cd 00 00 00 df 90		msgLen 0E to 3892A00F From AEB37930 type:11 seq:CD cmd:07 CRC DF90 payload:00 00 00
+0E FF FF FF FF AE B3 79 30 11 01 5E 00 00 00 F7 9C Command: Len: 9 Dest: FFFFFFFF Src: AEB37930 Port:11 CMD: 01 Seq:5E Color HSV:000000
+0E AE B3 79 30 38 92 A0 0F 11 02 60 00 00 00 0F 8E Command: Len: 9 Dest: AEB37930 Src: 3892A00F Port:11 CMD: 02 Seq:60 Color HSV:000000
+0E 38 92 A0 0F AE B3 79 30 11 03 6E 53 A5 0D E6 92 Command: Len: 9 Dest: 3892A00F Src: AEB37930 Port:11 CMD: 03 Seq:6E Color HSV:53A50D
+0E AE B2 FD 30 38 82 A0 8A CD 04 5F 14 A5 02 0D 3D Command: Len: 9 Dest: AEB2FD30 Src: 3882A08A Port:CD CMD: 04 Seq:5F Color HSV:14A502
+0E 38 92 A0 0F AE B3 79 30 11 05 77 9D FF 0D 00 91 Command: Len: 9 Dest: 3892A00F Src: AEB37930 Port:11 CMD: 05 Seq:77 Color HSV:9DFF0D
+0E AE B3 79 30 38 92 A0 0F 11 06 7C 9D FF 0D 0F 8C Command: Len: 9 Dest: AEB37930 Src: 3892A00F Port:11 CMD: 06 Seq:7C Color HSV:9DFF0D
+0E 38 92 A0 0F AE B3 79 30 11 07 45 00 00 00 02 95 Command: Len: 9 Dest: 3892A00F Src: AEB37930 Port:11 CMD: 07 Seq:45 Color HSV:000000
+0E AE B3 79 30 38 92 A0 0F 11 08 49 00 00 00 0A 90 Command: Len: 9 Dest: AEB37930 Src: 3892A00F Port:11 CMD: 08 Seq:49 Color HSV:000000
 
 ```
 
