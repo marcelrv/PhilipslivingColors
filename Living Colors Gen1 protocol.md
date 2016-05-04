@@ -19,12 +19,13 @@ Position   Length   Information
 
 | Commands | Description | Comment   |
 | -------- | ------ | -------- |
-| 0x01 | ?? Ping / Identify / search | Is seen when no Act from lamp is received |
+| 0x01 | ?? Ping / Identify / search | Is seen when no Ack from lamp is received |
 | 0x03 | Set HSV color | payload is H,S,V bytes|
 | 0x04 | Set HSV color Ack | payload is H,S,V bytes|
 | 0x05 | Switch Lamp On | payload is H,S,V bytes|
 | 0x06 | Switch Lamp On Ack| payload is H,S,V bytes|
 | 0x07 | Switch Lamp Off | payload is 0,0,0 |
+| 0x08 | Switch Lamp Off Ack | payload is 0,0,0 |
 | 0x0C | ?? Seen when holding ON. Possibly demo mode | payload is G,S,V |
 
 After each command the sequence byte is increased with 1 digit
