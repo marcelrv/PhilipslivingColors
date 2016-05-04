@@ -29,7 +29,8 @@ Position   Length   Information
 | 0x0C | Color Changing/rotating mode. (Seen when holding ON)  | payload is G,S,V |
 
 After each command the sequence byte is increased with 1 digit
-Lamp will acknoledge with the command bit +1 (0x04 is ack of command 0x03) 
+Lamp will acknoledge with the command bit +1 (0x04 is ack of command 0x03). 
+Note, I expect the same for command 0x01 and 0x0C but have not seen this.(my living color is faulthy, with extreemy poor reception causing it to miss most acknowledgements)
 
 Destination address FF FF FF FF is broadcast
 
